@@ -2,11 +2,32 @@
   "name": "template-fastify",
   "version": "1.0.0",
   "main": "./dist",
-  "repository": "https://github.com/citizen-nsl/template-fastify.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citizen-nsl/template-fastify.git"
+  },
   "author": "citizen-nsl",
   "license": "MIT",
   "dependencies": {
     "@fastify/cors": "^9.0.1",
-    "fastify": "^4.27.0"
+    "fastify": "^4.27.0",
+    "mongoose": "^8.3.5"
+  },
+  "bugs": {
+    "url": "https://github.com/citizen-nsl/template-fastify/issues"
+  },
+  "homepage": "https://github.com/citizen-nsl/template-fastify#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node src/app.ts",
+    "build": "tsc",
+    "start": "node ."
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
   }
 }
